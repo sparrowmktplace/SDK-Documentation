@@ -1,4 +1,4 @@
-title: SDK Docs
+title:  SDK Docs
 description: SDK Docs
 theme: just-the-docs
 
@@ -10,7 +10,7 @@ aux_links:
 
 
 favicon_ico: "/assets/images/favicon.png"
-
+logo: "/assets/SurveySparrow-Logo.svg"
 
 color_scheme: light
 

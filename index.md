@@ -16,7 +16,7 @@ nav_order: 1
 
 ## **2. Sparrow Cli**
 
-#### 2.1 [Commands](/docs/sparrow-cli/commands.html)
+#### 2.1 [Sparrow Cli](/docs/sparrow-cli/index.html)
 
 
 ## **3. Configuration**
