@@ -39,5 +39,5 @@ nav_order: 1
 #### 7.1 [App Categories And Types](/docs/app-category-types/index.html)
 
 ## **8. Batch App**
-#### 7.1 [Batch App](/docs/batch-app/index.html)
+#### 8.1 [Batch App](/docs/batch-app/index.html)
 
