@@ -11,7 +11,7 @@ nav_order: 1
 ---
 ## **1. Getting Started**
 
-#### 1.1 [Quick Start](../SDK-Documentation/docs/getting-started/quick-start.html)
+#### 1.1 [Quick Start](../SDK-Documentation/_site/docs/getting-started/quick-start.html)
 #### 1.2 [Your First App](SDK-Documentation/docs/getting-started/first-app.html)
 
 ## **2. Sparrow Cli**
