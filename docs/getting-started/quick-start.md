@@ -10,7 +10,6 @@ nav_order: 1
 ### You can build Sparrow apps that will automate most of your development tasks by using the following steps.
 
 #### 1. [Initial Requirements](#inital-requirements)
-
 #### 2. [Install Sparrow CLI](#install-the-sparrow-cli)
 #### 3. [Develop an App](#develop-an-app)
 #### 4. [Test the App](#test-a-front-end-app)
