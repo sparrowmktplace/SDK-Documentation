@@ -11,11 +11,20 @@ text-align: left !important;
 th{
   text-align: center !important;
 }
+#explore-build-connect strong{
+  letter-spacing: 3px !important;
+font-weight: 700 !important;
+}
+
+#explore-build-connect > strong:nth-child(even){
+  color: #19b885 !important;
+}
 
 @media (min-width: 66.5rem) {
   .side-bar {
     width: 300px !important;
   }
+ 
 }
 
 @media (min-width: 50rem) {

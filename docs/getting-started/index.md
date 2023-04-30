@@ -9,6 +9,6 @@ has_children: true
 
 ## Get started to create a new sdk , install the needed requirements and follow the instructions to setup the sdk
 
-### 1.1 [Quick Start](./quick-start.html)
+- ### [Quick Start](./quick-start.html)
 
-### 1.2 [Your First App](./first-app.html)
+- ###  [Your First App](./first-app.html)

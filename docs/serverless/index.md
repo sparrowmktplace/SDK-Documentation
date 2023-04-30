@@ -4,6 +4,9 @@ title: Serverless
 nav_order: 7
 ---
 
+# **Severless**
+
+
 The survey sparrow app development platform includes a serverless environment to enable you to create apps that run in response to events such as survey sparrow product, app setup, and external events. Serverless computing involves servers, but they are abstracted away from developers.
 
 To use this feature, all you need to do is configure an event listener and the callback method. When the event occurs, the callback method is executed on a server. 
