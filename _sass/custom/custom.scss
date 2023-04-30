@@ -28,6 +28,9 @@ th{
   .site-footer {
     display: none !important;
   }
+  .aux-nav{
+    display: none !important;
+  }
 }
 
 @media (min-width: 66.5rem) {
@@ -38,3 +41,5 @@ th{
     margin-right: 40px !important;
   }
 }
+
+

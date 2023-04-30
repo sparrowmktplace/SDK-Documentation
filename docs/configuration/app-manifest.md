@@ -24,11 +24,11 @@ The manifest.json lists the configured request templates that the app invokes to
             "icon": "logo.svg"
                 }
             },
-           events:{
-            onSubmissionComplete":{
-"handler":"submissionHandler"
+           "events":{
+        "onSubmissionComplete":{
+        "handler":"submissionHandler"
         },
-functions":{"surveyConverter":{"timeout":10}}
+"functions":{"surveyConverter":{"timeout":10}}
     },
     "engines": {
         "node": "18.16.0",

@@ -28,3 +28,16 @@ nav_order: 1
 
 ## **4. Features**
 #### 4.1 [Features](/docs/features/index.html)
+
+## **5. Data Storage**
+#### 5.1 [Data Storage](/docs/data-storage/index.html)
+
+## **6. Serverless**
+#### 6.1 [Serverless](/docs/serverless/index.html)
+
+## **7. App Categories And Types**
+#### 7.1 [App Categories And Types](/docs/app-category-types/index.html)
+
+## **8. Batch App**
+#### 7.1 [Batch App](/docs/batch-app/index.html)
+
