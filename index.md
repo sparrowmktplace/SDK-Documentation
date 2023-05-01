@@ -5,7 +5,7 @@ nav_order: 1
 ---
 
 
-# Survey Sparrow SDK Documentation
+# SurveySparrow SDK Documentation
 ### This documentation helps developer to build apps using surveysparrow software development kit
 
 ---

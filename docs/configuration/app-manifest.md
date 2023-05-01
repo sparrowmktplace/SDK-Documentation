@@ -15,7 +15,7 @@ The manifest.json lists the configured request templates that the app invokes to
 
 ```json
 {
-    "platform-version": "2.2",
+    "platform-version": "1.0",
     "product": {
         "surveysparrow": {
             "location": {

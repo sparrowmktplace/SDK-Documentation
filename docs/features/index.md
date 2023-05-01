@@ -91,7 +91,7 @@ DELETE:
   {
     options: {
       headers: {
-        Authorization: "Bearer <%=access_token>",
+        Authorization: "Bearer <%= access_token%> 
       },
       isOAuth: true,
       maxAttempts: 5,
@@ -102,8 +102,10 @@ DELETE:
 
 POST:
 ```js
-window.client.request.post("https://www.googleapis.com/calendar/v3/calendars/primary/events",{options:{headers:{
-         Authorization: "Bearer <%=access_token>"
+window.client.request.post("https://www.googleapis.com/calendar/v3/calendars/primary/events",
+{options:
+      {headers:{
+         Authorization: "Bearer <%= access_token%> "
        },isOAuth:true,maxAttempts:5}},state)
 
 
@@ -131,7 +133,7 @@ You can use the **OAuth 2 protocol** to authorize an app to access resources fro
 
 - Provide the redirect URL for your app in the third-party developer portal.
 
-&emsp;&emsp; 1. Testing:` http://localhost:10001/auth/callback`
+&emsp;&emsp; 1. Testing:` http://localhost:30001/auth/callback`
 
 &emsp;&emsp; 2. Production: `https://marketplace.surveysparrow.com/api/marketplace-redirect-url`
 
