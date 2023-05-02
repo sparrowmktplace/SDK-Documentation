@@ -21,20 +21,22 @@ font-weight: 700 !important;
 }
 
 .side-bar{
-  width: 200px !important;
-  min-width: 250px !important;
+  width: 250px !important;
+  min-width: 300px !important;
+  padding-left: 30px;
 }
 
 @media (min-width: 66.5rem) {
   .side-bar {
       width: 250px !important;
-      min-width: 250px !important;
+      min-width: 300px !important;
+  padding-left: 30px;
   }
   .main {
     max-width: 1200px !important;
     width: 100%;
     margin-right: 40px !important;
-    margin-left: 250px !important;
+    margin-left: 260px !important;
 
   }
  
@@ -45,7 +47,7 @@ font-weight: 700 !important;
     max-width: 1200px !important;
     width: 100%;
     margin-right: 40px !important;
-    margin-left: 250px !important;
+    margin-left: 260px !important;
   }
   .site-footer {
     display: none !important;
