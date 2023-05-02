@@ -27,8 +27,14 @@ font-weight: 700 !important;
 
 @media (min-width: 66.5rem) {
   .side-bar {
-      width: 200px !important;
+      width: 250px !important;
       min-width: 250px !important;
+  }
+  .main {
+    max-width: 1200px !important;
+    width: 100%;
+    margin-left: 345px !important;
+    margin-right: 40px !important;
   }
  
 }
@@ -46,15 +52,12 @@ font-weight: 700 !important;
   .aux-nav{
     display: none !important;
   }
+  .side-bar {
+    width: 250px !important;
+    min-width: 250px !important;
 }
 
-@media (min-width: 66.5rem) {
-  .main {
-    max-width: 1200px !important;
-    width: 100%;
-    margin-left: 345px !important;
-    margin-right: 40px !important;
-  }
 }
+
 
 
