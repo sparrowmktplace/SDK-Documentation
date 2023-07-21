@@ -38,7 +38,7 @@ Sample:
 ```
 In this, whenever a submission has happened in survey sparrow then that payload will be passed to the app. In the server.js the mentioned handler will get the payload of the submission.
 
-For now, only `onSubmissionComplete` is supported in serverless events.
+For now, only `onSubmissionComplete, onContactCreate, onContactUpdate, onContactDelete` are the supported serverless events.
 
 ## **Server Method Invocation:**
 
@@ -75,12 +75,20 @@ Sample:
 
 The server method can be invoked from the frontend using the client object like:
 
-`window.client.request.invoke(functionName, data);`
+`client.request.invoke(functionName, data);`
 
 Sample:
 
 `const result = await window.client.request.invoke(“surveyConverter”, {data:”sample_data”});
 `
+
+The Server method will recieve the data along with the iparams of the app user like:
+```json
+{
+  "iparams":{},
+  "data":{}
+}
+```
 
 After the app logic in the server method runs, the server method sends an appropriate response to the front-end component. To enable this:
 

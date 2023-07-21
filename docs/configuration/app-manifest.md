@@ -9,7 +9,7 @@ nav_order: 1
 
 The manifest.json file contains information such as the platform version used by a product, locations on the product UI where an app can be rendered (for front-end apps), dependent packages used by the app, SMI functions that can be invoked from an app’s front-end component, events and the corresponding callbacks (for serverless apps), and the Node.js and SSDK versions used to build, test, validate, and pack the app.
 
-The manifest.json lists the configured request templates that the app invokes to construct and send secure HTTP requests to the third-party domains. manifest.json whitelists all the third-party domains with which the app can interact. 
+The manifest.json lists the configured urls for api calls that the app invokes to construct and send secure HTTP requests to the third-party domains. manifest.json whitelists all the third-party domains with which the app can interact. 
 
 ### **Sample manifest.json:**
 
@@ -17,25 +17,31 @@ The manifest.json lists the configured request templates that the app invokes to
 {
     "platform-version": "1.0",
     "product": {
-        "surveysparrow": {
-            "location": {
-                "full_page_app": {
-            "url":"template.html",
-            "icon": "logo.svg"
-                }
-            },
-           "events":{
-        "onSubmissionComplete":{
-        "handler":"submissionHandler"
-        },
-"functions":{"surveyConverter":{"timeout":10}}
+    "surveysparrow": {
+      "location":{
+        "full_page_app":{
+          "url": "index.html",
+          "icon": "styles/images/icon.svg"
+        }
+      },
+      "events": {
+        "onSubmissionComplete": {
+          "handler": "onSubmissionComplete"
+        }
+      },
+      "functions":{
+        "callSmiEvent":{
+          "timeout":10        
+        }
+      }
+    }
     },
+    "whitelisted-domains":["https://www.google.com"],
     "engines": {
         "node": "18.16.0",
         "ssdk": "1.3.0"
-    },
-   "whitelisted-domains":
-["https://www.google.com"]
+    }
+  
 }
 
 
@@ -47,7 +53,7 @@ The manifest.json lists the configured request templates that the app invokes to
 |2.| product <br/>**Mandatory** | Object | Associates a surveysparrow product with the information that is necessary to render the app on the specified product.(child parameter: surveysparrow) |
 |3. | surveysparrow<br/>**Mandatory** | Object | Specifies information that is necessary to render the app on the surveysparrow UI.(Child parameter: location) |
 |4. | location <br/>**Mandatory for all except serverless apps** | Object | Specifies the multiple locations on the survey sparrow UI, where the app is to be rendered.(Child parameter: full_page_app) |
-|5.| full_page_app | Object | Specifies information necessary to render the app on the survey sparrow UI, in the account level integration page under installed Apps<br/>Attributes: url, icon. Should be one of full_page_app, main_page_app, integrate_page_app,response_import_page_app|
+|5.| full_page_app | Object | Specifies information necessary to render the app on the survey sparrow UI, in the account level integration page under installed Apps<br/>Attributes: url, icon. The location should be one of full_page_app, new_survey_modal, builder_integrations_list,response_details,contact_details,new_survey_shares, contact_import, response_import, home_navigation, home_left_panel, survey_settings, response_import_page_app |
 |6.| url<br/>**Mandatory** | String | Specifies the relative path from the app project directory to the index.html file based on which the app is rendered. The contents of the index.html file are used to render the app in an IFrame at the specified location. Default value:index.html (file in the app directory)
 |7.| icon<br/>**Mandatory** | String | Specifies the relative path from the app project directory to an image file (in SVG format). The image is used as the app’s icon when the app is rendered on the UI. The resolution of the image needs to be 64x64 pixels. Default value: icon.svg (file in the app directory) | 
 |8. | engines | Object | Specifies the Node.js version and SSDK version that are used to build the app. SSDK auto-populates this value.|

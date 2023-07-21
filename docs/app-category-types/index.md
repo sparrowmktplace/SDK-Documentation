@@ -1,7 +1,7 @@
 ---
 layout: default
 title: App Categories And Types
-nav_order: 7
+nav_order: 9
 ---
 
 
@@ -34,7 +34,7 @@ To publish any app to our Marketplace, you can submit the app under one of the f
 
 - **External App**: These apps use the survey sparrow methods and integrate the survey sparrow functionalities with a third-party product. An External App is listed in the survey sparrow Marketplace but is installed from the third-party’s URL.
 
-## **Custom apps:**
+## **How to Publish a Custom app:**
 
 These apps address specific customer requirements and are available only to that customer. A custom app is not subject to review; it is available for installation as soon as it is submitted and published. 
 
@@ -44,11 +44,11 @@ How to publish a custom app:
 
 - Go to developer portal First you will see all the apps which have been created by you. Then click New app to publish an app.
 
-- Upon clicking, give all the details like app name, app icon, app description, app instructions, app ZIP which is obtained from ssdk upon ssdk pack command and a video url in which the usage about the app is mentioned.
+- Upon clicking, give all the details like app name, app icon, app description, app instructions, app ZIP which is obtained from ssdk upon ssdk pack command and a video url in which the usage about the app is mentioned.You will be also prompted to give some other details like support email, support url and website link.
 
 - Once all those details are filled the app will be published and is ready to use on your account. It is exclusively for your account since it is a custom app.
 
-- After this, if you want to update or delete the app you can click on the pencil icon on that particular app’s tile and you can edit the necessary details. A new version of the app will be published upon changing the name and zip of the app or else only the zip of the app.
+- After this, if you want to update or delete the app you can click on that particular app’s tile and you can edit the necessary details. A new version of the app will be published upon changing the zip of the app.
 
 - At the end of the same page there will be an option for deleting the app, upon deleting all the versions and data related to the app will be deleted and the app will be removed from the apps and integrations tab in the settings page.
 

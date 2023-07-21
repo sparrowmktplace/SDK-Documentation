@@ -42,7 +42,7 @@ The Sparrow command-line interface tool that helps you quickly build, validate &
 | OPTIONS | SHORT-HAND NOTATION | USAGE | DESCRIPTION |
 | ------------- |:-------------:| :-------------:| -------------:|
 |--app-dir| -d |General syntax: `$ssdk run -d <DIR>`<br/> `<DIR>` is the directory path to the folder containing the app that is tested locally through the ssdk run command. Example `$ssdk run -d /user/myFirstApp` |Specifies the directory path to the folder that contains the app that is tested locally.|
-| –-skip-validation | -V | General syntax:`$ssdk run -V <Validation-type>`<br/> `“$ssdk run --skip-validation <Validation-type>`<br/> `<Validation-type>` is the type of validation check that is skipped.Example `$ssdk run -V lint`| Skips specific validation checks. The errors associated with the validation, if any, are not displayed when the app is tested locally.|
+
 
 
 ## **Validate:**
@@ -50,12 +50,24 @@ The Sparrow command-line interface tool that helps you quickly build, validate &
 This command validates whether the app code is error-free. If there are errors in the code, corresponding violations are displayed after the command is run.
 
 ```bash
-ssdk validate [--app-dir DIR] [--fix]
+ssdk validate [--app-dir DIR]
 ```
 
 ## **Pack:**
 
+This command generates the **dist/your_app.zip** in the current app directory, later this zip can be used to publish the app.
+
+```bash
+ssdk pack [--app-dir]
+```
+
 ## **Version:**
+
+To find the current version of the ssdk installed locally
+
+```bash
+ssdk version
+```
 
 
 

@@ -27,11 +27,11 @@ Let’s take a closer look at the files that were created in the app.
 
 - **README.md**
 
-&emsp;&emsp;&emsp;Developers need to maintain a proper README file so when there is a change in ownership of the code base, a new developer can easily understand the various nuances of the code.
+&emsp;&emsp;&emsp; Developers need to maintain a proper README file so when there is a change in ownership of the code base, a new developer can easily understand the various nuances of the code.
 
 - **manifest.json**
 
-&emsp; The manifest file is used to store configuration information for the app.
+&emsp;&emsp;&emsp; The manifest file is used to store configuration information for the app.
 
 ```json
 {
@@ -83,7 +83,7 @@ The product key is used to specify the product and location in which the app is 
 
 The new survey Sparrow UI is built as a single-page application. Single-page applications do not reload the entire page when the context is changed, only the relevant sections are modified. If an agent is already on a survey builder page and navigates to the integration page, only certain sections of the page are reloaded.
 
-When the page is loaded for the first time, the app.js file registers for the app.initialized() event. The core logic of the app, which is to retrieve the requester’s name and append it to a string, is contained in this callback.
+When the page is loaded for the first time, the app.js file registers for the app.initialized() event.
 
 As apps are rendered in an IFrame, the app and underlying page communicate through methods by using the client object. The client.data.get(‘getSurveyId’) method uses a Data method to retrieve the surveyId in the integration page at survey level.
 

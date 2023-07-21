@@ -27,19 +27,25 @@ For serverless apps, the configured iparams are passed as part of event payloads
 |1.| display_name | String | Identifier of a parameter on the installation page.|
 |2.| description | String | Helper text that is displayed along with the parameter, on the installation page. The description can include examples. |
 |3.| type | String | Type of input field displayed, for the iparam, on the installation page. Possible values: text, email, number, phone_number, date, url, api_key |
-| 4.| required | boolean | Specifies whether the iparam is displayed as a mandatory parameter. An asterix is displayed next to the the parameter on the installation page. |
+| 4.| required | boolean | Specifies whether the iparam is displayed as a mandatory parameter. An asterix is displayed next to the parameter on the installation page. |
+| 5. | type_attributes | Object | Specifies the product with the key value pair as product and product name respectively. For eg: {product: surveysparrow}. (this field is only for api_key type)
 
 ## **Configure iparams.json:**
 
 ```json 
 {
   "surveysparrow_api_key": {
-    "display_name": "SurveySparrow API Key",
-    "description": "Please enter your SurveySparrow API key. You can find it in the profile section page",
-    "type": "api_key",
-    "required": true
-  },
-"name": {
+      "display_name": "SurveySparrow API Key",
+      "description": "Please enter your SurveySparrow API key. You can find it in the profile section page.",
+      "required": true,
+      "secure": true,
+      "type": "api_key",
+      "type_attributes": {
+        "product": "surveysparrow"
+      }
+    }
+  ,
+  "name": {
     "display_name": "Name",
     "description": "Please enter your Name here",
     "type": "text",

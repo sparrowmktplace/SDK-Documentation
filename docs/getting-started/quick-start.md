@@ -35,16 +35,21 @@ nvm --version
 
 ### **Install Node:**
 
-- To install Node.js, follow the given steps.
+- To install Node.js 18 via nvm, follow the given steps.
 
 ```bash 
 nvm install 18
+```
+- To use Node.js 18
+
+```bash
+nvm use 18
 ```
 
 - To verify that the node is installed correctly, run the following commands
 
 ```bash 
-node –version
+node –-version
 ```
 
 ## **Install the sparrow CLI**
@@ -102,7 +107,12 @@ npm install https://cdn.sparrow.io/ssdk/latest.tgz -g
 ```bash
 ssdk run 
 ```
+- Upon running ssdk run command you will be prompted to install a certificate on your browser for establishing https connection between your loacal app and your surveysparrow account.
 
+![image-5](../../assets/image5.png)
+- After you agree to install ssl certificate on your browser, the app will start running on https.
+
+![image-6](../../assets/image6.png)
 - Log in to your Survey Sparrow account.
 
 - To the Survey Sparrow account URL, append `?dev=true`
@@ -133,7 +143,7 @@ Here, DIR is the relative or absolute path to the project directory. If there ar
 
 &emsp;&emsp;&emsp;&emsp;`ssdk pack [--app-dir DIR]`= The command generates the dist/my_first_app.zip file.
 
-- To publish the app to the Sparrow Marketplace, navigate to the Sparrow developer portal and upload the packed file. For information on the app submission process, see documentation
+- To publish the app to the Sparrow Marketplace, navigate to the Sparrow developer portal and upload the packed file.
 
 
 

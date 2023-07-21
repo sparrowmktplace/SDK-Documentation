@@ -7,7 +7,7 @@ has_children: true
 
 # **Configuration**
 
-### This Page helps you to configure the sparrow SDK
+### This section helps you to configure the app using sparrow SDK
 
 - ####  [App Manifest](./app-manifest.html)
 

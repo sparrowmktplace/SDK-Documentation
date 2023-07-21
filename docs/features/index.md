@@ -133,7 +133,7 @@ You can use the **OAuth 2 protocol** to authorize an app to access resources fro
 
 - Provide the redirect URL for your app in the third-party developer portal.
 
-&emsp;&emsp; 1. Testing:` http://localhost:30001/auth/callback`
+&emsp;&emsp; 1. Testing:` http://localhost:30001/auth/callback?callback=http://localhost:30001/custom_configs?product=surveysparrow&product=surveysparrow`(the product should be the name of the environment you are testing)
 
 &emsp;&emsp; 2. Production: `https://marketplace.surveysparrow.com/api/marketplace-redirect-url`
 
@@ -146,6 +146,8 @@ You can use the **OAuth 2 protocol** to authorize an app to access resources fro
 |options | The options field can be used to send:<br/> - Additional parameters to the resource owner while fetching the access token. Custom headers as part of the token phase as required by certain third-party services. For this, custom headers can be included in the options field as an object.<br/> `"customHeaders": { "Authorization" : "Basic API_KEY" }`
 |scopes<br/>**Mandatory** | To control the level of access on the resource. It should be array of strings |
 |redirect_url| For production,<br/>`https://marketplace.surveysparrow.com/api/marketplace-redirect-url`
+
+**Note:** while testing the app, the scopes should be given inside options but in production the scopes should be given seperately as scopes.
 
 The access token and refresh token are stored and maintained by the marketplace itself and to use them in the request method’s url and options like: `<%=access_token%>.`
 
