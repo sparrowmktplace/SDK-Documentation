@@ -7,7 +7,7 @@ nav_order: 2
 
 # **Your First App**
 
-The goal of this tutorial is to help you understand the basics of app development. Here, you will build an app using the survey sparrow platform.
+The goal of this tutorial is to help you understand the basics of app development. Here, you will build an app using the SurveySparrow platform.
 
 For this tutorial, choose the **your_first_app** template.
 
@@ -81,7 +81,7 @@ The product key is used to specify the product and location in which the app is 
 
 &emsp;&emsp;&emsp; **style.css** - App specific stylesheet that contains style information for various UI components of the app.
 
-The new survey Sparrow UI is built as a single-page application. Single-page applications do not reload the entire page when the context is changed, only the relevant sections are modified. If an agent is already on a survey builder page and navigates to the integration page, only certain sections of the page are reloaded.
+The new SurveySparrow UI is built as a single-page application. Single-page applications do not reload the entire page when the context is changed, only the relevant sections are modified. If an agent is already on a survey builder page and navigates to the integration page, only certain sections of the page are reloaded.
 
 When the page is loaded for the first time, the app.js file registers for the app.initialized() event.
 

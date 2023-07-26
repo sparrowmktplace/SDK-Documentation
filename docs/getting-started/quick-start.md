@@ -113,9 +113,9 @@ ssdk run
 - After you agree to install ssl certificate on your browser, the app will start running on https.
 
 ![image-6](../../assets/image6.png)
-- Log in to your Survey Sparrow account.
+- Log in to your SurveySparrow account.
 
-- To the Survey Sparrow account URL, append `?dev=true`
+- To the SurveySparrow account URL, append `?dev=true`
 
 &emsp;&emsp;&emsp;Example URL:
 &emsp;`https://subdomain.surveysparrow.com/?dev=true`

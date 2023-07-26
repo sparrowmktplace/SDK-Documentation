@@ -12,6 +12,6 @@ nav_order: 1
 
 # **Explore.** **Build.** **Connect.**
 
- Survey Sparrow SDK Where other developers can build SDK Apps and enhance thier developing experience using survey sparrow.
+ SurveySparrow SDK Where other developers can build SDK Apps and enhance thier developing experience using SurveySparrow.
 
 

@@ -26,13 +26,13 @@ Agent apps:
 
 ## **App Submission Process:**
 
-To publish any app to our Marketplace, you can submit the app under one of the following app types. App types determine how an app is available for consumption to app users - publicly displayed, private only to a survey sparrow customer, listed in an external website, and so on.
+To publish any app to our Marketplace, you can submit the app under one of the following app types. App types determine how an app is available for consumption to app users - publicly displayed, private only to a SurveySparrow customer, listed in an external website, and so on.
 
-- **Survey Sparrow App**: These apps extend the functionalities of survey sparrow and are built using the survey sparrow CLI. A survey sparrow app is installed from the survey sparrow Marketplace. 
+- **SurveySparrow App**: These apps extend the functionalities of SurveySparrow and are built using the SurveySparrow CLI. A SurveySparrow app is installed from the SurveySparrow Marketplace. 
 
 - **Custom App**:These apps address specific customer requirements and are available only to that customer. A custom app is not subject to review; it is available for installation as soon as it is submitted and published. The app submission process for Custom apps includes provisions to test multiple versions of an app in a production environment. After testing, you can choose to publish the most appropriate app version to app users. 
 
-- **External App**: These apps use the survey sparrow methods and integrate the survey sparrow functionalities with a third-party product. An External App is listed in the survey sparrow Marketplace but is installed from the third-party’s URL.
+- **External App**: These apps use the SurveySparrow methods and integrate the SurveySparrow functionalities with a third-party product. An External App is listed in the SurveySparrow Marketplace but is installed from the third-party’s URL.
 
 ## **How to Publish a Custom app:**
 

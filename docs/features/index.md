@@ -38,7 +38,7 @@ It can be used like:  <br/> `window.client.data.get(“getSurveyId”)-> returns
 
 ## **Interface Methods:**
 
-You can use the interface methods to trigger certain actions on the survey sparrow user interface.
+You can use the interface methods to trigger certain actions on the SurveySparrow user interface.
 
 Success and failure toaster:
 
