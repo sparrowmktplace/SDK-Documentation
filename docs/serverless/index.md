@@ -7,12 +7,12 @@ nav_order: 7
 # **Severless**
 
 
-The survey sparrow app development platform includes a serverless environment to enable you to create apps that run in response to events such as survey sparrow product, app setup, and external events. Serverless computing involves servers, but they are abstracted away from developers.
+The SurveySparrow app development platform includes a serverless environment to enable you to create apps that run in response to events such as SurveySparrow product, app setup, and external events. Serverless computing involves servers, but they are abstracted away from developers.
 
 To use this feature, all you need to do is configure an event listener and the callback method. When the event occurs, the callback method is executed on a server. 
 
 
-Whenever an event happens in the server of the survey sparrow then that event is captured and sent to the app. With this payload the app can do whatever it wants.
+Whenever an event happens in the server of the SurveySparrow then that event is captured and sent to the app. With this payload the app can do whatever it wants.
 
 In order to capture and use this event the app has to register what are all events that it is using in the `manifest.json` file.
 
@@ -36,7 +36,7 @@ Sample:
 "handler":"submissionHandler"
         },
 ```
-In this, whenever a submission has happened in survey sparrow then that payload will be passed to the app. In the server.js the mentioned handler will get the payload of the submission.
+In this, whenever a submission has happened in SurveySparrow then that payload will be passed to the app. In the server.js the mentioned handler will get the payload of the submission.
 
 For now, only `onSubmissionComplete, onContactCreate, onContactUpdate, onContactDelete` are the supported serverless events.
 
