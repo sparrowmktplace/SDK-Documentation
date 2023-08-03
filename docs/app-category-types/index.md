@@ -34,13 +34,13 @@ To publish any app to our Marketplace, you can submit the app under one of the f
 
 - **External App**: These apps use the SurveySparrow methods and integrate the SurveySparrow functionalities with a third-party product. An External App is listed in the SurveySparrow Marketplace but is installed from the third-party’s URL.
 
-## **How to Publish a Custom app:**
+## **Custom Apps:**
 
 These apps address specific customer requirements and are available only to that customer. A custom app is not subject to review; it is available for installation as soon as it is submitted and published. 
 
 These apps are available for that particular account who published their app as a custom app in the developer portal. The apps listed in the apps and integration page once the app is published.
 
-How to publish a custom app:
+**How to publish a custom app:**
 
 - Go to developer portal First you will see all the apps which have been created by you. Then click New app to publish an app.
 
