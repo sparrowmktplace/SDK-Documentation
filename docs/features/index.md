@@ -33,7 +33,7 @@ The object is loaded to the window object of the app.
 
 ## **Data Methods:**
 
-Currently we support only one data method which can be only used for the apps rendered on integrate page(integrate_page_app).
+Currently the support is for only one data method which can be only used for the apps rendered on a survey's integration page(builder_integrations_list).
 It can be used like:  <br/> `window.client.data.get(“getSurveyId”)-> returns a long value`
 
 ## **Interface Methods:**
