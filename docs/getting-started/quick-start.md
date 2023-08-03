@@ -244,4 +244,14 @@ The command generates the dist/my_first_app.zip file.
 - To publish the app to the Sparrow Marketplace, navigate to the Sparrow developer portal and upload the packed file.
 
 
+In case if you want to uninstall the app do the following steps:
+
+```bash
+npm uninstall ssdk -g
+```
+```bash
+rm -r ~/.ssdk
+```
+
+
 
