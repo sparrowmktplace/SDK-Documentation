@@ -144,7 +144,7 @@ You can use the **OAuth 2 protocol** to authorize an app to access resources fro
 |authorize_url<br/>**Mandatory**| Third-party authorization request URL.|
 |token_url<br/>**Mandatory** | Request URL for the access token.|
 |options | The options field can be used to send:<br/> - Additional parameters to the resource owner while fetching the access token. Custom headers as part of the token phase as required by certain third-party services. For this, custom headers can be included in the options field as an object.<br/> `"customHeaders": { "Authorization" : "Basic API_KEY" }`
-|scopes<br/>**Mandatory** | To control the level of access on the resource. It should be array of strings |
+|scopes<br/>**(Mandatory only when the app is published in production account. Otherwise the scopes can be added as scope array inside options itself for local testing)** | To control the level of access on the resource. It should be array of strings |
 |redirect_url| For production,<br/>`https://marketplace.surveysparrow.com/api/marketplace-redirect-url`
 
 **Note:** while testing the app, the scopes should be given inside options but in production the scopes should be given seperately as scopes.
