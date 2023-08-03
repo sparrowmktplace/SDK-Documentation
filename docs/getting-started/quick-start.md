@@ -15,22 +15,108 @@ nav_order: 1
 #### 4. [Test the App](#test-a-front-end-app)
 #### 5. [Validate and Pack](#validate-and-pack)
 
+<br>
+Apps built on the SurveySparrow platform are compatible with the latest and immediately preceding version of the following browsers.
+
+- Google Chrome
+- Firefox
+- Edge
+- Arc
+
 ---
 
 ## **Inital requirements**
 
 ### **Install NVM**:
 
-&emsp;&emsp; NVM (Node Version Manager) is a tool that allows you to easily manage multiple versions of Node.js on your system. Here are the steps to install NVM
+NVM (Node Version Manager) is a tool that allows you to easily manage multiple versions of Node.js on your system. Here are the steps to install NVM
  
- - On a Mac or Linux, follow the installation instructions provided on the NVM GitHub page.
+#### **On Mac OS**:
 
-- On Windows, download the nvm-setup.zip file from the NVM release channel, extract the files, and run the installer.
+- Install brew using the commands given below. If you have already installed it, please skip this step.
 
-- To verify that NVM is installed correctly, open a terminal window and run the following commands
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+- To Verify the installation
+
+```bash
+brew --version
+```
+
+- Install NVM via brew
+
+```bash
+brew install nvm
+```
+
+#### **on Windows OS**:
+
+- Installation using the Chocolatey package manager.
+  - Launch Terminal in Administrator mode.
+  - Run the command.
+
+```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+- Verify Chocolatey installation using the command given below.
+Verify NVM installation
+
+```bash
+choco -v
+```
+
+- Install NVM through the Chocolatey package manager.
+
+```bash
+choco install nvm
+```
+- Install via installers
+
+  - Download the NVM Setup from [here](https://github.com/coreybutler/nvm-windows/releases/download/1.1.11/nvm-setup.exe) and Complete the installation process using the steps given [here](https://github.com/coreybutler/nvm-windows#installation--upgrades).
+
+#### **on Ubuntu**:
+
+- If you don't have curl installed already, install it.
+
+```bash
+sudo apt-get install curl
+```
+
+- Run the NVM installation script as shown below
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+```
+
+- The script clones the nvm repository to ~/.nvm, and attempts to add the source lines from the snippet below to the correct profile file (~/.bash_profile, ~/.zshrc, ~/.profile, or ~/.bashrc).
+
+```bash
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+```
+   - When faced with any issues, follow the instructions given [here](https://github.com/nvm-sh/nvm) For more details, refer to
+
+#### **Verify NVM installation**
 
 ```bash 
 nvm --version
+```
+
+#### **Installation summary**
+- Ensure that the versions of the corresponding packages are as suggested or higher.
+
+```bash
+#for nvm -v
+0.38.0
+# for node -v
+v18.12.0
+# for npm -v
+9.5.1
+# for ssdk -v
+0.1.0
 ```
 
 ### **Install Node:**
@@ -57,8 +143,18 @@ node –-version
 - To install the latest CLI version, run the following command.
 
 ```bash
-npm install https://cdn.sparrow.io/ssdk/latest.tgz -g
+npm install https://ssdk.surveysparrow.dev/ssdk.tgz -g
 ```
+
+- To install mkcert and nss via brew in MacOS for installing ssl certificate of the ssdk(running in https) on the browser
+
+```bash
+brew install mkcert
+```
+```bash
+brew install nss # if you use Firefox
+```
+
 - Run the following command to verify the CLI installation.
 
  ```bash
@@ -107,10 +203,10 @@ npm install https://cdn.sparrow.io/ssdk/latest.tgz -g
 ```bash
 ssdk run 
 ```
-- Upon running ssdk run command you will be prompted to install a certificate on your browser for establishing https connection between your loacal app and your surveysparrow account.
+- Upon running ssdk run command you will be prompted to install a certificate on your browser for establishing https connection between your loacal app and your browser.
 
 ![image-5](../../assets/image5.png)
-- After you agree to install ssl certificate on your browser, the app will start running on https.
+- After you agree to install ssl certificate on your browser, the ssl certificate will be installed on your browser and the app will start running on https.
 
 ![image-6](../../assets/image6.png)
 - Log in to your SurveySparrow account.
@@ -140,8 +236,10 @@ ssdk validate [--app-dir DIR]
 Here, DIR is the relative or absolute path to the project directory. If there are errors in the code, corresponding violations are displayed.
 
 - To pack the app for submission, run the following command.
-
-&emsp;&emsp;&emsp;&emsp;`ssdk pack [--app-dir DIR]`= The command generates the dist/my_first_app.zip file.
+```bash
+ssdk pack [--app-dir DIR]
+```
+The command generates the dist/my_first_app.zip file.
 
 - To publish the app to the Sparrow Marketplace, navigate to the Sparrow developer portal and upload the packed file.
 

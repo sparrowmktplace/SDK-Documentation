@@ -59,3 +59,11 @@ For serverless apps, the configured iparams are passed as part of event payloads
 
 ![image-4](../../assets/image4.png)
 
+## **Installation Page on local app:**
+
+while developing the app in local environment you can access the iparams page [here](https://localhost:30001/custom_configs)
+
+![image-7](../../assets/image7.png)
+
+
+

@@ -11,6 +11,8 @@ The goal of this tutorial is to help you understand the basics of app developmen
 
 For this tutorial, choose the **your_first_app** template.
 
+[Here](https://marketplacetutorial.signsparrow.com/) you can find more detailed tutorials on all kind of apps.
+
 ### **Create:**
 
 - To get started, open the terminal window, navigate to the directory under which you want to create your app, and type the following command. Note that this directory must be empty.
@@ -51,8 +53,7 @@ Let’s take a closer look at the files that were created in the app.
     }
   },
   "whitelisted-domains": [
-    "https://*.surveysparrow.com",
-    "https://*.surveysparrow.test"
+    "https://*.surveysparrow.com"
   ],
   "engines": {
     "node": "14.20.0",
@@ -64,6 +65,26 @@ Let’s take a closer look at the files that were created in the app.
 The platform-version key is automatically generated and used to infer the platform version that your app uses. This is used to ensure backward compatibility when a new version of the framework is released.
 
 The product key is used to specify the product and location in which the app is rendered. This app is to be rendered in the account level settings page location(full_page_app). url and icon specify the path (from the /app directory) to the template and icon files rendered in that location.
+
+- **config/iparams.json**
+
+&emsp;&emsp;&emsp;The SSDK enables you to define and use parameters whose values app users can set when they install an app. These parameters are termed installation parameters or iparams
+
+```bash
+{
+    "surveysparrow_api_key": {
+      "display_name": "SurveySparrow API Key",
+      "description": "Please enter your SurveySparrow API key. You can find it in the profile section page.",
+      "data-bind": "product.api_key",
+      "required": true,
+      "secure": true,
+      "type": "api_key",
+      "type_attributes": {
+        "product": "signsparrow"
+      }
+    }
+}
+```
 
 - **app/styles/images/icon.svg**
 
@@ -87,7 +108,12 @@ When the page is loaded for the first time, the app.js file registers for the ap
 
 As apps are rendered in an IFrame, the app and underlying page communicate through methods by using the client object. The client.data.get(‘getSurveyId’) method uses a Data method to retrieve the surveyId in the integration page at survey level.
 
-- app/styles/style.css
+- **app/styles/style.css**
 
 &emsp;&emsp;&emsp; The app specific stylesheet which contains style information for various UI components of the app.
+
+- **app/scripts/app.js**
+
+&emsp;&emsp;&emsp; The app specific javascript code will be writtern here. As apps are rendered in an IFrame, the app and underlying page communicate through methods by using the client object, that is initialized here.
+
 
