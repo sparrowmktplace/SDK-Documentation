@@ -21,9 +21,9 @@ The Sparrow command-line interface tool that helps you quickly build, validate &
 #### 2. [Run](#run)
 
 #### 3. [Validate](#validate)
-#### 4. [Pack](#develop-an-app)
+#### 4. [Pack](#pack)
 
-#### 5. [version](#develop-an-app)
+#### 5. [version](#version)
 
 ## **Create:**
 
