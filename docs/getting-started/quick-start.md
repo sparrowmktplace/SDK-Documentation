@@ -5,8 +5,9 @@ parent: Getting Started
 nav_order: 1
 ---
 
-# Quick Start
-You can build Sparrow apps that will automate most of your development tasks by using the following steps.
+# **Quick Start**
+
+### You can build Sparrow apps that will automate most of your development tasks by using the following steps.
 
 #### 1. [Initial Requirements](#inital-requirements)
 #### 2. [Install Sparrow CLI](#install-the-sparrow-cli)
@@ -147,7 +148,7 @@ brew install nss # if you use Firefox
  ```
  ![image-1](../../assets/image1.png)
  
-#### **Installation summary**
+ #### **Installation summary**
 - Ensure that the versions of the corresponding packages are as suggested or higher.
 
 ```bash

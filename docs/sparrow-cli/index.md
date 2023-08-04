@@ -4,7 +4,7 @@ title: Sparrow Cli
 nav_order: 3
 ---
 
-# Sparrow CLI
+# **Sparrow CLI**
 
 
 The Sparrow command-line interface tool that helps you quickly build, validate & test Sparrow apps. You can also use it to automate many common development tasks
@@ -14,15 +14,18 @@ To view the list of CLI commands, after you install the CLI, at the command prom
 
 The Sparrow command-line interface tool that helps you quickly build, validate & test Sparrow apps. You can also use it to automate many common development tasks
 
-Here are the list of commands which can be used in the command line interface
+### Here are the list of commands which can be used in the command line interface
 
 #### 1. [Create](#create)
+
 #### 2. [Run](#run)
+
 #### 3. [Validate](#validate)
 #### 4. [Pack](#pack)
+
 #### 5. [version](#version)
 
-## Create:
+## **Create:**
 
 - The command creates an app in the specified directory, based on the default app template. If no directory is specified, the app is created in the current directory.
 
@@ -34,7 +37,7 @@ Here are the list of commands which can be used in the command line interface
 |--products | To specify the product for which the app is created. If the option is not used with the create command, you are prompted to select a product. Select surveysparrow.|
 |--template| To specify the template for which the app is created. If the option is not used with the create command, you are prompted to select a template. Select the your_first_app template to create a front-end app.|
 
-## Run:
+## **Run:**
 
 | OPTIONS | SHORT-HAND NOTATION | USAGE | DESCRIPTION |
 | ------------- |:-------------:| :-------------:| -------------:|
@@ -42,7 +45,7 @@ Here are the list of commands which can be used in the command line interface
 
 
 
-## Validate:
+## **Validate:**
 
 This command validates whether the app code is error-free. If there are errors in the code, corresponding violations are displayed after the command is run.
 
@@ -50,7 +53,7 @@ This command validates whether the app code is error-free. If there are errors i
 ssdk validate [--app-dir DIR]
 ```
 
-## Pack:
+## **Pack:**
 
 This command generates the **dist/your_app.zip** in the current app directory, later this zip can be used to publish the app.
 
@@ -58,7 +61,7 @@ This command generates the **dist/your_app.zip** in the current app directory, l
 ssdk pack [--app-dir]
 ```
 
-## Version:
+## **Version:**
 
 To find the current version of the ssdk installed locally
 

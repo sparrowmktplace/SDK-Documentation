@@ -4,7 +4,7 @@ title: Installation Parameters
 parent: Configuration
 nav_order: 2
 ---
-# Installation Parameters
+# **Installation Parameters**
 
 The SSDK enables you to define and use parameters whose values app users can set when they install an app. These parameters are termed installation parameters or iparams. To define and use iparams:
 
@@ -16,7 +16,7 @@ The SSDK enables you to define and use parameters whose values app users can set
 
 For serverless apps, the configured iparams are passed as part of event payloads. The app logic can retrieve the iparams values from the payload.
 
-## Configure:
+## **Configure:**
 
 1. From your app’s root directory, navigate to the iparam.json file.
 
@@ -30,7 +30,7 @@ For serverless apps, the configured iparams are passed as part of event payloads
 | 4.| required | boolean | Specifies whether the iparam is displayed as a mandatory parameter. An asterix is displayed next to the parameter on the installation page. |
 | 5. | type_attributes | Object | Specifies the product with the key value pair as product and product name respectively. For eg: {product: surveysparrow}. (this field is only for api_key type)
 
-## Configure iparams.json:
+## **Configure iparams.json:**
 
 ```json 
 {
@@ -55,11 +55,11 @@ For serverless apps, the configured iparams are passed as part of event payloads
 
 ```
 
-## Installation Page:
+## **Installation Page:**
 
 ![image-4](../../assets/image4.png)
 
-## Installation Page on local app:
+## **Installation Page on local app:**
 
 while developing the app in local environment you can access the iparams page [here](https://localhost:30001/custom_configs)
 
