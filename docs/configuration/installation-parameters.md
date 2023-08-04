@@ -18,7 +18,7 @@ For serverless apps, the configured iparams are passed as part of event payloads
 
 ## **Configure:**
 
-1. From your app’s root directory, navigate to the iparam.json file.
+1. From your app’s root directory, navigate to the config/iparam.json file.
 
 2. Configure iparams by using the following sample format.
  
