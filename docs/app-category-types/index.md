@@ -26,23 +26,23 @@ Agent apps:
 
 ## **App Submission Process:**
 
-To publish any app to our Marketplace, you can submit the app under one of the following app types. App types determine how an app is available for consumption to app users - publicly displayed, private only to a SurveySparrow customer, listed in an external website, and so on.
+To publish any app to our AppNest, you can submit the app under one of the following app types. App types determine how an app is available for consumption to app users - publicly displayed, private only to a SurveySparrow customer, listed in an external website, and so on.
 
-- **SurveySparrow App**: These apps extend the functionalities of SurveySparrow and are built using the SurveySparrow CLI. A SurveySparrow app is installed from the SurveySparrow Marketplace. 
+- **SurveySparrow App**: These apps extend the functionalities of SurveySparrow and are built using the SurveySparrow CLI. A SurveySparrow app is installed from the SurveySparrow AppNest. 
 
 - **Custom App**:These apps address specific customer requirements and are available only to that customer. A custom app is not subject to review; it is available for installation as soon as it is submitted and published. The app submission process for Custom apps includes provisions to test multiple versions of an app in a production environment. After testing, you can choose to publish the most appropriate app version to app users. 
 
-- **External App**: These apps use the SurveySparrow methods and integrate the SurveySparrow functionalities with a third-party product. An External App is listed in the SurveySparrow Marketplace but is installed from the third-party’s URL.
+- **External App**: These apps use the SurveySparrow methods and integrate the SurveySparrow functionalities with a third-party product. An External App is listed in the SurveySparrow AppNest but is installed from the third-party’s URL.
 
 ## **Custom Apps:**
 
 These apps address specific customer requirements and are available only to that customer. A custom app is not subject to review; it is available for installation as soon as it is submitted and published. 
 
-These apps are available for that particular account who published their app as a custom app in the developer portal. The apps listed in the apps and integration page once the app is published.
+These apps are available for that particular account who published their app as a custom app in the AppNest. The apps listed in the apps and integration page once the app is published.
 
 **How to publish a custom app:**
 
-- Go to developer portal First you will see all the apps which have been created by you. Then click New app to publish an app.
+- Go to AppNest First you will see all the apps which have been created by you. Then click New app to publish an app.
 
 - Upon clicking, give all the details like app name, app icon, app description, app instructions, app ZIP which is obtained from ssdk upon ssdk pack command and a video url in which the usage about the app is mentioned.You will be also prompted to give some other details like support email, support url and website link.
 

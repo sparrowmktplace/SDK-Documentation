@@ -11,7 +11,7 @@ The goal of this tutorial is to help you understand the basics of app developmen
 
 For this tutorial, choose the **your_first_app** template.
 
-[Here](https://marketplacetutorial.signsparrow.com/) you can find more detailed tutorials on all kind of apps.
+[Here](https://surveysparrow.dev/tutorials) you can find more detailed codelabs on all kind of apps.
 
 ### **Create:**
 
@@ -80,7 +80,7 @@ The product key is used to specify the product and location in which the app is 
       "secure": true,
       "type": "api_key",
       "type_attributes": {
-        "product": "signsparrow"
+        "product": "surveysparrow"
       }
     }
 }

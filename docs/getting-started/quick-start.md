@@ -105,20 +105,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 nvm --version
 ```
 
-#### **Installation summary**
-- Ensure that the versions of the corresponding packages are as suggested or higher.
-
-```bash
-#for nvm -v
-0.38.0
-# for node -v
-v18.12.0
-# for npm -v
-9.5.1
-# for ssdk -v
-0.1.0
-```
-
 ### **Install Node:**
 
 - To install Node.js 18 via nvm, follow the given steps.
@@ -162,6 +148,19 @@ brew install nss # if you use Firefox
  ```
  ![image-1](../../assets/image1.png)
  
+ #### **Installation summary**
+- Ensure that the versions of the corresponding packages are as suggested or higher.
+
+```bash
+#for nvm -v
+0.38.0
+# for node -v
+v18.12.0
+# for npm -v
+9.5.1
+# for ssdk version
+0.1.0
+```
 ## **Develop an App:**
 
 &emsp; You can use the following steps to create an app that displays a sample text in the ‘app & integration’ section of setting page.
@@ -241,7 +240,7 @@ ssdk pack [--app-dir DIR]
 ```
 The command generates the dist/my_first_app.zip file.
 
-- To publish the app to the Sparrow Marketplace, navigate to the Sparrow developer portal and upload the packed file.
+- To publish the app to the Sparrow AppNest, navigate to the [Sparrow developer portal](https://appnest.surveysparrow.com) and upload the packed file.
 
 
 In case if you want to uninstall the ssdk do the following steps:
