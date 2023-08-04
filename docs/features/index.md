@@ -74,6 +74,8 @@ Sample of request Method:
 `const domain = “https://api.surveysparrow.com”;`
 
 GET:
+
+in app.js
 ```js
 const result = await window.client.request.get(`${domain}/v3/surveys`, {
      options: {
@@ -84,7 +86,20 @@ const result = await window.client.request.get(`${domain}/v3/surveys`, {
    });
 ```
 
+in server.js
+```js
+const result = await $Fetch.get(`${domain}/v3/surveys`, {
+     options: {
+       headers: {
+         Authorization: "Bearer <%=iparams.surveysparrow_api_key%>"
+       }, isOAuth: false, maxAttempts: 5
+     }
+   })
+```
+
 DELETE:
+
+in app.js
 ```js
  window.client.request.delete(
   `https://www.googleapis.com/calendar/v3/calendars/primary/events/${event.id}`,
@@ -101,6 +116,8 @@ DELETE:
 ```
 
 POST:
+
+in app.js
 ```js
 window.client.request.post("https://www.googleapis.com/calendar/v3/calendars/primary/events",
 {options:
@@ -109,8 +126,20 @@ window.client.request.post("https://www.googleapis.com/calendar/v3/calendars/pri
        },isOAuth:true,maxAttempts:5}},state)
 
 
-The response body can be use like:
+The response body can be used like:
 (JSON.parse(data).body)
+```
+
+in server.js
+```js
+$Fetch.post("https://www.googleapis.com/calendar/v3/calendars/primary/events",state,
+{options:
+      {
+        headers:{
+         Authorization: "Bearer <%= access_token%> "
+       },isOAuth:true,maxAttempts:5
+      }
+});
 ```
 
 ## **Status Codes:**
@@ -153,11 +182,26 @@ The access token and refresh token are stored and maintained by the AppNest itse
 
 Sample:
 
+in app.js
 ```js
-window.client.request.post("https://www.googleapis.com/calendar/v3/calendars/primary/events",{options:{headers:{
+window.client.request.post("https://www.googleapis.com/calendar/v3/calendars/primary/events",{
+  options:{
+    headers:{
          Authorization: "Bearer <%=access_token>"
-       },isOAuth:true,maxAttempts:5}},state)
+       },isOAuth:true,maxAttempts:5
+      }
+  },state);
 
 ```
 
+in server.js
+```js
+$Fetch.post("https://www.googleapis.com/calendar/v3/calendars/primary/events",state,{
+  options:{
+    headers:{
+         Authorization: "Bearer <%=access_token>"
+       },isOAuth:true,maxAttempts:5
+     }
+  })
+```
 
