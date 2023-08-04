@@ -5,7 +5,7 @@ parent: Getting Started
 nav_order: 2
 ---
 
-# **Your First App**
+# Your First App
 
 The goal of this tutorial is to help you understand the basics of app development. Here, you will build an app using the SurveySparrow platform.
 

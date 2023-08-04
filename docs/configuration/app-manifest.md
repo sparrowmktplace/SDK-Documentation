@@ -5,7 +5,7 @@ parent: Configuration
 nav_order: 1
 ---
 
-# **App Manifest**
+# App Manifest
 
 The manifest.json file contains information such as the platform version used by a product, locations on the product UI where an app can be rendered (for front-end apps), dependent packages used by the app, SMI functions that can be invoked from an app’s front-end component, events and the corresponding callbacks (for serverless apps), and the Node.js and SSDK versions used to build, test, validate, and pack the app.
 

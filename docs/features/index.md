@@ -4,8 +4,7 @@ title: Features
 nav_order: 5
 ---
 
-# **Features**
-
+# Features
 
 #### 1. [App Lifecycle Methods](#app-lifecycle-methods)
 #### 2. [Data Methods](#data-methods)
