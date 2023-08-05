@@ -89,12 +89,10 @@ const result = await window.client.request.get(`${domain}/v3/surveys`, {
 in server.js
 ```js
 const result = await $Fetch.get(`${domain}/v3/surveys`, {
-     options: {
        headers: {
          Authorization: "Bearer <%=iparams.surveysparrow_api_key%>"
        }, isOAuth: false, maxAttempts: 5
-     }
-   })
+  })
 ```
 
 DELETE:
@@ -133,13 +131,11 @@ The response body can be used like:
 in server.js
 ```js
 $Fetch.post("https://www.googleapis.com/calendar/v3/calendars/primary/events",state,
-{options:
-      {
+  {
         headers:{
          Authorization: "Bearer <%= access_token%> "
        },isOAuth:true,maxAttempts:5
-      }
-});
+  });
 ```
 
 ## **Status Codes:**
@@ -197,11 +193,9 @@ window.client.request.post("https://www.googleapis.com/calendar/v3/calendars/pri
 in server.js
 ```js
 $Fetch.post("https://www.googleapis.com/calendar/v3/calendars/primary/events",state,{
-  options:{
     headers:{
          Authorization: "Bearer <%=access_token>"
        },isOAuth:true,maxAttempts:5
-     }
   })
 ```
 
