@@ -158,7 +158,7 @@ You can use the **OAuth 2 protocol** to authorize an app to access resources fro
 
 - Provide the redirect URL for your app in the third-party AppNest.
 
-&emsp;&emsp; 1. Testing:`http://localhost:30001/auth/callback?callback=http://localhost:30001/custom_configs?product=surveysparrow&product=surveysparrow`(the product should be the name of the environment you are testing)
+&emsp;&emsp; 1. Testing:`https://localhost:30001/auth/callback?callback=http://localhost:30001/custom_configs?product=surveysparrow&product=surveysparrow`(the product should be the name of the environment you are testing)
 
 &emsp;&emsp; 2. Production: `https://marketplace.surveysparrow.com/api/marketplace-redirect-url`
 
